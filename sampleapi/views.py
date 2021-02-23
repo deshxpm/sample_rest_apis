@@ -34,7 +34,7 @@ class SongView(generics.CreateAPIView):
 
 #create Podcast
 class PodcastView(generics.CreateAPIView):
-	serializer_class = SongSerializers
+	serializer_class = PodcastSerializers
 
 	def get_queryset(self):
 		return Podcast.objects.all()
